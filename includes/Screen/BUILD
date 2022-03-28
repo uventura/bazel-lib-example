@@ -4,5 +4,5 @@ cc_library(
     hdrs = ["Screen.h"],
     visibility = ["//visibility:public"],
     linkopts = ["-pthread"],
-    copts = ["-Iincludes/Screen"]
+    strip_include_prefix = ["includes/Screen"]
 )
